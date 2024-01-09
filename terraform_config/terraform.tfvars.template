@@ -1,0 +1,5 @@
+project_id = "scareflix"
+region = "europe-west1"
+repo = "scareflix-catalog"
+repo_uri = "https://github.com/spannerk/scareflix-catalog.git"
+connection_id = "scareflix-cat-github-conn"

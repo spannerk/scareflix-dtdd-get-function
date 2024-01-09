@@ -1,0 +1,14 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - scareflix-get-dtdd-metadata
+  - --region=europe-west1
+  - --source=api_function
+  - --trigger-topic=dtdd
+  - --runtime=python312
+  - --entry-point=get_metadata
+  - --gen2
+  - --set-secrets=DTDD_API_KEY=DTDD_API_KEY:latest
